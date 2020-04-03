@@ -1,7 +1,7 @@
 public class MaximumAnalyser
 {
-    public Integer findMaximum(Integer firstnumber)
+    public Integer findMaximum(Integer firstNumber, Integer secondNumber)
     {
-        return firstnumber;
+            return secondNumber;
     }
 }
