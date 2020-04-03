@@ -8,7 +8,7 @@ public class MaximumTestAnalyser
     {
         MaximumAnalyser maximumAnalyser = new MaximumAnalyser();
         Integer maximum = maximumAnalyser.findMaximum(9,10, 11);
-        Assert.assertEquals((Integer)9 , maximum);
+        Assert.assertEquals((Integer)11 , maximum);
     }
 
     @Test
@@ -16,7 +16,7 @@ public class MaximumTestAnalyser
     {
         MaximumAnalyser maximumAnalyser = new MaximumAnalyser();
         Integer maximum = maximumAnalyser.findMaximum(9, 10, 11);
-        Assert.assertEquals((Integer)10 , maximum);
+        Assert.assertEquals((Integer)11 , maximum);
     }
 
     @Test
@@ -26,4 +26,5 @@ public class MaximumTestAnalyser
         Integer maximum = maximumAnalyser.findMaximum(9,10, 11);
         Assert.assertEquals((Integer)11 , maximum);
     }
+
 }
