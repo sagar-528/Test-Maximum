@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MaximumTestAnalyser" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-04-03T19:32:21" hostname="Sagar" time="0.009">
+<testsuite name="MaximumTestAnalyser" tests="18" skipped="0" failures="0" errors="0" timestamp="2020-04-04T06:48:56" hostname="Sagar" time="0.04">
   <properties/>
-  <testcase name="givenThreeFloatNumber_FindMaximum_AtThirdPosition" classname="MaximumTestAnalyser" time="0.002"/>
+  <testcase name="givenThreeStrings_FindMaximum_AtSecondPosition" classname="MaximumTestAnalyser" time="0.008"/>
+  <testcase name="givenThreeIntergers_FindMaximum_AtFirstPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.001"/>
+  <testcase name="givenThreeIntergers_FindMaximum_AtThirdPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.001"/>
+  <testcase name="givenThreeFloatNumber_FindMaximum_AtSecondPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.001"/>
+  <testcase name="givenThreeFloatNumber_FindMaximum_AtThirdPosition" classname="MaximumTestAnalyser" time="0.001"/>
+  <testcase name="givenThreeStrings_FindMaximum_AtFirstPosition" classname="MaximumTestAnalyser" time="0.001"/>
   <testcase name="givenThreeIntergers_FindMaximum_AtFirstPosition" classname="MaximumTestAnalyser" time="0.001"/>
+  <testcase name="givenThreeFloatNumber_FindMaximum_AtFirstPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.001"/>
   <testcase name="givenThreeFloatNumber_FindMaximum_AtSecondPosition" classname="MaximumTestAnalyser" time="0.0"/>
+  <testcase name="givenThreeFloatNumber_FindMaximum_AtThirdPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.0"/>
   <testcase name="givenThreeFloatNumber_FindMaximum_AtFirstPosition" classname="MaximumTestAnalyser" time="0.0"/>
-  <testcase name="givenThreeIntergers_FindMaximum_AtSecondPosition" classname="MaximumTestAnalyser" time="0.001"/>
+  <testcase name="givenThreeStrings_FindMaximum_AtFirstPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.0"/>
+  <testcase name="givenThreeIntergers_FindMaximum_AtSecondPosition" classname="MaximumTestAnalyser" time="0.0"/>
+  <testcase name="givenThreeStrings_FindMaximum_AtThirdPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.001"/>
+  <testcase name="givenThreeStrings_FindMaximum_AtThirdPosition" classname="MaximumTestAnalyser" time="0.0"/>
+  <testcase name="givenThreeIntergers_FindMaximum_AtSecondPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.001"/>
+  <testcase name="givenThreeStrings_FindMaximum_AtSecondPosition_FromGenericClass" classname="MaximumTestAnalyser" time="0.0"/>
   <testcase name="givenThreeIntergers_FindMaximum_AtThirdPosition" classname="MaximumTestAnalyser" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,32 +1,36 @@
-public class MaximumAnalyser
+public class MaximumAnalyser<S extends Comparable<S>>
 {
-    public Integer findMaximum(Integer firstNumber, Integer secondNumber, Integer thridNumber)
-    {
-            if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thridNumber) > 0)
+    S firstNumber;
+    S secondNumber;
+    S thirdNumber;
 
-                return firstNumber;
 
-               else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thridNumber) > 0)
-
-                    return secondNumber;
-
-                else
-                    return thridNumber;
-
+    public MaximumAnalyser() {
     }
 
-    public Float findMaximum(Float firstNumber, Float secondNumber, Float thridNumber)
+    public MaximumAnalyser(S firstNumber, S secondNumber, S thirdNumber)
     {
-        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thridNumber) > 0)
+        this.firstNumber = firstNumber;
+        this.secondNumber = secondNumber;
+        this.thirdNumber = thirdNumber;
+    }
+
+    public S findMaximum(S firstNumber, S secondNumber, S thirdNumber)
+    {
+        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0)
 
             return firstNumber;
 
-        else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thridNumber) > 0)
+        else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thirdNumber) > 0)
 
             return secondNumber;
 
         else
-            return thridNumber;
+            return thirdNumber;
+    }
 
+    public <S extends Comparable<S>> S findMaximum()
+    {
+        return (S) findMaximum(firstNumber,secondNumber,thirdNumber);
     }
 }
