@@ -5,21 +5,21 @@ public class MaximumTestAnalyser
 {
     MaximumAnalyser maximumAnalyser = new MaximumAnalyser();
     @Test
-    public void givenThreeIntergers_FindMaximum_AtFirstPosition()
+    public void givenThreeIntegers_FindMaximum_AtFirstPosition()
     {
         Integer maximum = (Integer) maximumAnalyser.findMaximum(9,10, 11);
         Assert.assertEquals((Integer)11 , maximum);
     }
 
     @Test
-    public void givenThreeIntergers_FindMaximum_AtSecondPosition()
+    public void givenThreeIntegers_FindMaximum_AtSecondPosition()
     {
         Integer maximum = (Integer) maximumAnalyser.findMaximum(9, 10, 11);
         Assert.assertEquals((Integer)11 , maximum);
     }
 
     @Test
-    public void givenThreeIntergers_FindMaximum_AtThirdPosition()
+    public void givenThreeIntegers_FindMaximum_AtThirdPosition()
     {
         Integer maximum = (Integer) maximumAnalyser.findMaximum(9,10, 11);
         Assert.assertEquals((Integer)11 , maximum);
@@ -68,7 +68,7 @@ public class MaximumTestAnalyser
     }
 
     @Test
-    public void givenThreeIntergers_FindMaximum_AtFirstPosition_FromGenericClass()
+    public void givenThreeIntegers_FindMaximum_AtFirstPosition_FromGenericClass()
     {
         MaximumAnalyser maximumAnalyser = new MaximumAnalyser(9,10, 11);
         Integer maximum = (Integer) maximumAnalyser.findMaximum();
@@ -76,7 +76,7 @@ public class MaximumTestAnalyser
     }
 
     @Test
-    public void givenThreeIntergers_FindMaximum_AtSecondPosition_FromGenericClass()
+    public void givenThreeIntegers_FindMaximum_AtSecondPosition_FromGenericClass()
     {
         MaximumAnalyser maximumAnalyser = new MaximumAnalyser(9,10, 11);
         Integer maximum = (Integer) maximumAnalyser.findMaximum();
@@ -84,7 +84,7 @@ public class MaximumTestAnalyser
     }
 
     @Test
-    public void givenThreeIntergers_FindMaximum_AtThirdPosition_FromGenericClass()
+    public void givenThreeIntegers_FindMaximum_AtThirdPosition_FromGenericClass()
     {
         MaximumAnalyser maximumAnalyser = new MaximumAnalyser(9,10, 11);
         Integer maximum = (Integer) maximumAnalyser.findMaximum();

@@ -31,6 +31,12 @@ public class MaximumAnalyser<S extends Comparable<S>>
 
     public <S extends Comparable<S>> S findMaximum()
     {
+        printMax(findMaximum(firstNumber,secondNumber,thirdNumber));
         return (S) findMaximum(firstNumber,secondNumber,thirdNumber);
+    }
+
+    public void printMax(S maximum)
+    {
+        System.out.println("Maximum is :"+maximum);
     }
 }
