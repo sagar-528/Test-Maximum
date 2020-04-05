@@ -15,27 +15,32 @@ public class MaximumAnalyser<S extends Comparable<S>>
         this.thirdNumber = thirdNumber;
     }
 
-    public S findMaximum(S firstNumber, S secondNumber, S thirdNumber)
+    public static <S extends Comparable<S>> S findMaximum(S ...parameter)
     {
-        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0)
-
-            return firstNumber;
-
-        else if (secondNumber.compareTo(firstNumber) > 0 && secondNumber.compareTo(thirdNumber) > 0)
-
-            return secondNumber;
-
-        else
-            return thirdNumber;
+        int hold;
+        S value;
+         //Insertion Sorting
+        for (int counter = 1; counter < parameter.length; counter++)
+        {
+            hold = counter;
+            value = parameter[hold];
+            while (hold > 0 && parameter[hold-1].compareTo(value) < 0)
+            {
+                parameter[hold] = parameter[hold-1];
+                hold--;
+            }
+            parameter[hold] = value;
+        }
+        printMax(parameter[0]);
+        return parameter[0];
     }
 
     public <S extends Comparable<S>> S findMaximum()
     {
-        printMax(findMaximum(firstNumber,secondNumber,thirdNumber));
         return (S) findMaximum(firstNumber,secondNumber,thirdNumber);
     }
 
-    public void printMax(S maximum)
+    public static <S extends Comparable<S>> void printMax(S maximum)
     {
         System.out.println("Maximum is :"+maximum);
     }
